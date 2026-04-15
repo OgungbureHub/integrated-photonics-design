@@ -1,0 +1,1621 @@
+//  Calibre v2025.2_38.18    Mon Jun 2 16:41:43 PDT 2025
+//  Calibre Utility Library   v0-10_13-2017-1    Wed Dec 11 07:38:03 PST 2024
+//  Litho Libraries v2025.2_38.18  Mon Jun 2 16:41:43 PDT 2025
+//
+//                   Copyright Siemens 1996-2025
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+WARNING: tuned profile "balanced" on host "wsmaredsous.intec.ugent.be" may not be ideal for best performance. Refer to Calibre Admin Guide.
+//  Running on Linux wsmaredsous.intec.ugent.be (157.193.135.116) 5.14.0-611.5.1.el9_7.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Nov 11 08:09:09 EST 2025 x86_64 glibc 2.34/NPTL 2.34
+//  OS: AlmaLinux release 9.7 (Moss Jungle Cat)[5.14.0-611.5.1.el9_7.x86_64]
+//  hypervisor detected
+//
+//  Entries in /proc/meminfo:
+//
+//  MemTotal:       16088700 kB
+//  MemFree:        14190440 kB
+//  MemAvailable:   14477324 kB
+//  Buffers:            4320 kB
+//  Cached:           543724 kB
+//  SwapCached:            0 kB
+//  Active:          1341768 kB
+//  Inactive:         235780 kB
+//  Active(anon):    1070664 kB
+//  Inactive(anon):        0 kB
+//  Active(file):     271104 kB
+//  Inactive(file):   235780 kB
+//  Unevictable:        4000 kB
+//  Mlocked:               0 kB
+//  SwapTotal:       8241148 kB
+//  SwapFree:        8241148 kB
+//  Zswap:                 0 kB
+//  Zswapped:              0 kB
+//  Dirty:                 8 kB
+//  Writeback:             0 kB
+//  AnonPages:       1033480 kB
+//  Mapped:           145580 kB
+//  Shmem:             41160 kB
+//  KReclaimable:      74448 kB
+//  Slab:             138052 kB
+//  SReclaimable:      74448 kB
+//  SUnreclaim:        63604 kB
+//  KernelStack:        3980 kB
+//  PageTables:         9428 kB
+//  SecPageTables:         0 kB
+//  NFS_Unstable:          0 kB
+//  Bounce:                0 kB
+//  WritebackTmp:          0 kB
+//  CommitLimit:    16285496 kB
+//  Committed_AS:    1560092 kB
+//  VmallocTotal:   34359738367 kB
+//  VmallocUsed:       20244 kB
+//  VmallocChunk:          0 kB
+//  Percpu:             1760 kB
+//  HardwareCorrupted:     0 kB
+//  AnonHugePages:    270336 kB
+//  ShmemHugePages:        0 kB
+//  ShmemPmdMapped:        0 kB
+//  FileHugePages:         0 kB
+//  FilePmdMapped:         0 kB
+//  CmaTotal:              0 kB
+//  CmaFree:               0 kB
+//  Unaccepted:            0 kB
+//  HugePages_Total:       0
+//  HugePages_Free:        0
+//  HugePages_Rsvd:        0
+//  HugePages_Surp:        0
+//  Hugepagesize:       2048 kB
+//  Hugetlb:               0 kB
+//  DirectMap4k:      152584 kB
+//  DirectMap2M:     6117376 kB
+//  DirectMap1G:    12582912 kB
+//
+//  User limits:
+//
+//  Data size: unlimited
+//  RSS: unlimited
+//  Stack size: 8192 kB
+//  Max user processes: 62589
+//  VM: unlimited
+//  Current active profile: balanced
+//  net.netfilter.nf_conntrack_max: 262144
+//  vm.max_map_count: 65530
+//  vm.overcommit_memory: 0
+//  kernel.pid_max: 4194304
+//
+WARNING: Please increase descriptors limit for best performance (1024)
+//
+//  Processor AMD EPYC 7313 16-Core Processor                 [2511] (4th generation)
+//  CPU Info: Cores = 4, affinity = (4/4/4)
+//  Max file descriptors: 1024
+//  64 bit virtual addressing enabled
+//  Running aok_cal_2025.2_38.18/pkgs/icv/pvt/calibre -drc -hier -turbo _pcell_6_for_calibre.cal
+//  Process ID: 257616
+//
+//  Starting time: Wed Feb 11 01:09:04 2026
+//
+
+--- CALIBRE_* ENVIRONMENT VARIABLES:
+
+CALIBRE_ATOMIC_LVHEAP=0
+CALIBRE_CMD_LINE='/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv/pvt/calibre  -drc -hier -turbo _pcell_6_for_calibre.cal'
+CALIBRE_HOME=/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18
+CALIBRE_INITIAL_CMD_LINE='/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/bin/calibre -drc -hier -turbo _pcell_6_for_calibre.cal'
+CALIBRE_READDB_LD_LIBRARY_PATH=/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv/julia/1.5/lib/julia:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv/julia/1.5/lib:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/shared/pkgs/icv/tools/calibre_client/lib/64:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/calibre_base/lib64:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv_lib/lib64:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv_qt5_comp/plugins:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv_oa/22.41p004/lib/linux_rhel68_gcc44x_64/opt
+CALIBRE_SKIP_OS_CHECKS=
+//  Calibre Controller logfile = /var/tmp/CalibreControllerLog.wsmaredsous.intec.ugent.be.257616.2026_0211_0109
+//  Calibre Controller Connection wsmaredsous.intec.ugent.be:44821
+//  Running on 4 CPUs (pending licensing) 
+//
+//  LITHO operations available for use on 4 CPUs (pending licensing)
+//
+//  Created Core System logfile = /var/tmp/CalibreRRLog.wsmaredsous.intec.ugent.be.257616.2026_0211_0109
+
+--- CALIBRE::DRC-H - Wed Feb 11 01:09:04 2026
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-----          STANDARD VERIFICATION RULE FILE COMPILATION MODULE          -----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+--- RULE FILE = _pcell_6_for_calibre.cal
+
+LAYOUT PATH             "_pcell_6_for_calibre.gds"
+    LAYOUT PRIMARY          "pcell_6"
+    LAYOUT SYSTEM           GDSII
+    DRC SUMMARY REPORT      "_pcell_6_drc.sum"
+    DRC RESULTS DATABASE    "_pcell_6_drc.ascii" 
+    
+    //DRC KEEP EMPTY          NO
+    
+    // BEGIN: PRE INCLUDE COMMANDS
+    
+    // END: PRE INCLUDE COMMANDS
+    
+    INCLUDE "./prg_ebeam_2L_1MH_drc_deck.cal" 
+    
+    // BEGIN: POST INCLUDE COMMANDS
+    
+    // END: POST INCLUDE COMMANDS
+    
+    
+
+
+--- STANDARD VERIFICATION RULE FILE COMPILATION MODULE COMPLETED.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 1/3/3
+
+--- CALIBRE_* ENVIRONMENT VARIABLES:
+
+CALIBRE_ATOMIC_LVHEAP=0
+CALIBRE_CMD_LINE='/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv/pvt/calibre  -drc -hier -turbo _pcell_6_for_calibre.cal'
+CALIBRE_HOME=/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18
+CALIBRE_INITIAL_CMD_LINE='/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/bin/calibre -drc -hier -turbo _pcell_6_for_calibre.cal'
+CALIBRE_READDB_LD_LIBRARY_PATH=/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv/julia/1.5/lib/julia:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv/julia/1.5/lib:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/shared/pkgs/icv/tools/calibre_client/lib/64:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/calibre_base/lib64:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv_lib/lib64:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv_qt5_comp/plugins:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv_oa/22.41p004/lib/linux_rhel68_gcc44x_64/opt
+CALIBRE_SKIP_OS_CHECKS=
+
+
+--- VARIABLES:
+
+--- DEFINES:
+
+--- SELECTED RULE CHECKS:
+    WG.W.150
+    WG.S.150
+    WG.SHARPANGLE
+    WG_COR.I.WG_CLD
+    WG_HOL.I.WG_COR
+    WG_HOL.IO.WG_TRE
+    WG_HOL.IO.WG_CLD
+    RWG.W.150
+    RWG.S.150
+    RWG.SHARPANGLE
+    RWG_COR.I.RWG_CLD
+    RWG_HOL.I.RWG_COR
+    RWG_HOL.IO.RWG_TRE
+    RWG_HOL.IO.RWG_CLD
+    HEATER.S.IO.WG
+    HEATER.E.RWG
+    HEATER.S.5
+    METAL.O.HEATER.5
+    METAL.W.5
+    METAL.S.5
+    WG_COR.IO.EBG_KEEPOUT
+    RWG_COR.IO.EBG_KEEPOUT
+    DESIGN.IN.BOUNDARY
+
+--- UNSELECTED RULE CHECKS (IMPLICIT):
+
+--- UNSELECTED RULE CHECKS (EXPLICIT):
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-----                  CALIBRE::DRC-H - LICENSING MODULE                   -----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+
+//  Applying licensing policy...
+//  calibrehdrc license acquired.
+//  calibredrc license acquired.
+//  calibrehdrc license acquired.
+//  calibredrc license acquired.
+
+//  Licensed Products
+//  -----------------
+//  Base products running on 4 cores:
+//  - DRC (Hierarchical)
+//  - DFM PROPERTY
+//  - DFM COPY
+
+--- CALIBRE::DRC-H LICENSING MODULE COMPLETED.  CPU TIME = 0  REAL TIME = 0
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-----                   CALIBRE LAYOUT DATA INPUT MODULE                   -----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+--- LAYOUT SYSTEM = GDS
+--- LAYOUT MAGNIFICATION = 1
+
+--------------------------------------------------------------------------------
+-----                     GDS FILE SUMMARY INFORMATION                     -----
+--------------------------------------------------------------------------------
+
+GDS FILENAME:        _pcell_6_for_calibre.gds
+GDS VERSION:         5
+LIBRARY NAME:        pcell_6
+LAST MODIFIED:       ON 2026/2/11 AT 0:7:26
+LAST ACCESSED:       ON 2026/2/11 AT 0:7:26
+DATABASE PRECISION:  0.001 user units per database unit
+PHYSICAL PRECISION:  1e-09 meters per database unit
+MAGNIFICATION:       1
+SIZE:                11148
+
+--------------------------------------------------------------------------------
+-----                 GDS INPUT DATA FOR INDIVIDUAL CELLS                  -----
+--------------------------------------------------------------------------------
+     CELL NAME                  PLACEMENTS   ARRAYS   POLYGONS    PATHS    TEXTS
+--------------------------------------------------------------------------------
+pcell_6                                  6        0          0        0        0
+WG_TRACE_4                               0        0          2        0        0
+WG_TRACE_5                               0        0          2        0        0
+pcell_5                                  4        0          0        0        0
+pcell_5_wg1a                             0        0          2        0        0
+pcell_5_wg1b                             0        0          2        0        0
+pcell_5_wg2a                             0        0          2        0        0
+pcell_5_wg2b                             0        0          2        0        0
+prg_titanium_phase_shifter__3            2        0          0        0        0
+prg_titanium_phase_shifter__3_TRES
+                                         0        0          3        0        0
+prg_titanium_phase_shifter__3_wg         0        0          2        0        0
+
+--------------------------------------------------------------------------------
+-----                LAYOUT DATABASE CONSTRUCTOR CONCLUSION                -----
+--------------------------------------------------------------------------------
+
+DATABASE PREP:                      CPU TIME = 0  REAL TIME = 0
+DATABASE READ:                      CPU TIME = 0  REAL TIME = 0
+TEXT UPDATE:                        CPU TIME = 0  REAL TIME = 0
+MISC:                               CPU TIME = 0  REAL TIME = 0
+RECURSIVE REFERENCE CHECK:          CPU TIME = 0  REAL TIME = 0
+EXTENT UPDATE:                      CPU TIME = 0  REAL TIME = 0
+
+NOTE: UNUSED geometric data is present on the following layer/datatype pairs:
+
+NOTE: USED geometric data is present on the following layer/datatype pairs:
+    SIMPLE LAYER = 101
+        LAYER = 1 DATATYPE = 1
+    SIMPLE LAYER = 102
+        LAYER = 1 DATATYPE = 2
+    SIMPLE LAYER = 201
+        LAYER = 2 DATATYPE = 1
+    SIMPLE LAYER = 202
+        LAYER = 2 DATATYPE = 2
+    SIMPLE LAYER = 301
+        LAYER = 3 DATATYPE = 1
+    SIMPLE LAYER = 302
+        LAYER = 3 DATATYPE = 2
+
+NOTE: The following required simple layers are EMPTY:
+    103
+    104
+    105
+    110
+    203
+    204
+    205
+    210
+    10002
+    10004
+    10005
+
+WRAPUP:                             CPU TIME = 0  REAL TIME = 0
+
+--- LAYOUT DATABASE CONSTRUCTOR COMPLETED.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/4/4
+
+CONSTRUCTING HIERARCHICAL DATABASE
+    COPYING LAYOUT DATABASE
+    COPY COMPLETE. CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/3/4
+    (P=12 A=0(0) AX=0(0) AY=0(0) AD=0(0) D=0)
+    RULE FILE INFO  A:0 C:0 F:0 L:0 M:0
+    CLONE STATE: LCTP(Y/N/U) = U LCRP(Y/N/U) = U LCXP(Y/N/U) = U LCYP(Y/N/U) = U LITHO(0/1/2) = 0 DFM(0/1/2) = 0 MAGXY(0/1) = 0
+    PROCESSING TEXT
+    ELIMINATING DUPLICATE TEXT
+    DUPLICATE TEXT ELIMINATION COMPLETE (0 -> 0 = 0). CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/3/4
+    ELIMINATING EMPTY CELLS
+    EMPTY CELL ELIMINATION COMPLETE CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/3/4
+    COMPUTING RECTANGULAR EXTENTS
+    RECTANGULAR EXTENTS COMPLETE. CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/5
+    IDENTIFYING TOP LAYER CELLS
+    TOP LAYER CELL IDENTIFICATION COMPLETE CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/5
+    IDENTIFYING VERY SMALL CELLS
+    VERY SMALL CELL IDENTIFICATION COMPLETE CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/5
+    DETECTING FILL PATTERNS
+    CHECKING ACUTE/SKEW/ANGLED/OFFGRID
+
+WARNING: SKEW edge on layer WG_COR from location (-8.003,-6.137) to location (-8.002,-5.895) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-8.002,-5.895) to location (-8,-5.669) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-8,-5.669) to location (-7.997,-5.461) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.997,-5.461) to location (-7.991,-5.269) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.991,-5.269) to location (-7.983,-5.092) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.983,-5.092) to location (-7.971,-4.931) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.971,-4.931) to location (-7.958,-4.799) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.958,-4.799) to location (-7.941,-4.667) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.941,-4.667) to location (-7.92,-4.535) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.92,-4.535) to location (-7.895,-4.404) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.895,-4.404) to location (-7.867,-4.274) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.867,-4.274) to location (-7.835,-4.144) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.835,-4.144) to location (-7.8,-4.015) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.8,-4.015) to location (-7.761,-3.888) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.761,-3.888) to location (-7.718,-3.762) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.718,-3.762) to location (-7.672,-3.636) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.672,-3.636) to location (-7.623,-3.513) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.623,-3.513) to location (-7.57,-3.39) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.57,-3.39) to location (-7.513,-3.269) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.513,-3.269) to location (-7.454,-3.15) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.454,-3.15) to location (-7.391,-3.033) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.391,-3.033) to location (-7.324,-2.917) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.324,-2.917) to location (-7.255,-2.803) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.255,-2.803) to location (-7.182,-2.691) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.182,-2.691) to location (-7.107,-2.582) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.107,-2.582) to location (-7.028,-2.474) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.028,-2.474) to location (-6.946,-2.369) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-6.946,-2.369) to location (-6.861,-2.266) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-6.861,-2.266) to location (-6.774,-2.165) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-6.774,-2.165) to location (-6.684,-2.067) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-6.684,-2.067) to location (-6.591,-1.971) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-6.591,-1.971) to location (-6.495,-1.878) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-6.495,-1.878) to location (-6.397,-1.788) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-6.397,-1.788) to location (-6.296,-1.701) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-6.296,-1.701) to location (-6.193,-1.616) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-6.193,-1.616) to location (-6.088,-1.534) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-6.088,-1.534) to location (-5.98,-1.455) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-5.98,-1.455) to location (-5.871,-1.38) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-5.871,-1.38) to location (-5.759,-1.307) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-5.759,-1.307) to location (-5.645,-1.238) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-5.645,-1.238) to location (-5.529,-1.171) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-5.529,-1.171) to location (-5.412,-1.108) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-5.412,-1.108) to location (-5.293,-1.049) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-5.293,-1.049) to location (-5.172,-0.992) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-5.172,-0.992) to location (-5.049,-0.939) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-5.049,-0.939) to location (-4.926,-0.89) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-4.926,-0.89) to location (-4.8,-0.844) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-4.8,-0.844) to location (-4.674,-0.801) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-4.674,-0.801) to location (-4.547,-0.762) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-4.547,-0.762) to location (-4.418,-0.727) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-4.418,-0.727) to location (-4.288,-0.695) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-4.288,-0.695) to location (-4.158,-0.667) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-4.158,-0.667) to location (-4.027,-0.642) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-4.027,-0.642) to location (-3.895,-0.621) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-3.895,-0.621) to location (-3.763,-0.604) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-3.763,-0.604) to location (-3.631,-0.591) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-3.631,-0.591) to location (-3.47,-0.579) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-3.47,-0.579) to location (-3.293,-0.571) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-3.293,-0.571) to location (-3.101,-0.565) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-3.101,-0.565) to location (-2.893,-0.562) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-2.893,-0.562) to location (-2.667,-0.56) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-2.667,-0.56) to location (-2.425,-0.559) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-2.426,-0.109) to location (-2.67,-0.11) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-2.67,-0.11) to location (-2.898,-0.112) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-2.898,-0.112) to location (-3.112,-0.115) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-3.112,-0.115) to location (-3.311,-0.121) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-3.311,-0.121) to location (-3.497,-0.13) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-3.497,-0.13) to location (-3.67,-0.143) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-3.67,-0.143) to location (-3.815,-0.157) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-3.815,-0.157) to location (-3.96,-0.176) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-3.96,-0.176) to location (-4.104,-0.199) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-4.104,-0.199) to location (-4.247,-0.226) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-4.247,-0.226) to location (-4.39,-0.257) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-4.39,-0.257) to location (-4.531,-0.291) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-4.531,-0.291) to location (-4.672,-0.33) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-4.672,-0.33) to location (-4.812,-0.373) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-4.812,-0.373) to location (-4.95,-0.419) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-4.95,-0.419) to location (-5.087,-0.47) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-5.087,-0.47) to location (-5.222,-0.524) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-5.222,-0.524) to location (-5.356,-0.582) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-5.356,-0.582) to location (-5.488,-0.643) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-5.488,-0.643) to location (-5.619,-0.709) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-5.619,-0.709) to location (-5.747,-0.778) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-5.747,-0.778) to location (-5.874,-0.85) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-5.874,-0.85) to location (-5.999,-0.926) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-5.999,-0.926) to location (-6.121,-1.006) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-6.121,-1.006) to location (-6.241,-1.089) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-6.241,-1.089) to location (-6.359,-1.175) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-6.359,-1.175) to location (-6.474,-1.264) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-6.474,-1.264) to location (-6.587,-1.357) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-6.587,-1.357) to location (-6.697,-1.453) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-6.697,-1.453) to location (-6.804,-1.551) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-6.804,-1.551) to location (-6.909,-1.653) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-6.909,-1.653) to location (-7.011,-1.758) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.011,-1.758) to location (-7.109,-1.865) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.109,-1.865) to location (-7.205,-1.975) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.205,-1.975) to location (-7.298,-2.088) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.298,-2.088) to location (-7.387,-2.203) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.387,-2.203) to location (-7.473,-2.321) in cell pcell_5_wg1a.
+
+
+WARNING: SKEW edge on layer WG_COR from location (-7.473,-2.321) to location (-7.556,-2.441) in cell pcell_5_wg1a.
+
+
+WARNING: Maximum SKEW edge warning count of 100 has been reached.
+
+    CHECKING COMPLETE CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/5
+    ELIMINATING DUPLICATE PLACEMENTS
+    DUPLICATE PLACEMENT ELIMINATION COMPLETE (12 -> 12 = 0). CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/5
+    FLATTENING VERY SMALL CELL PLACEMENTS
+    FLATTENING SELECTED TOP LAYER CELL PLACEMENTS
+    PACKING GEOMETRY HEADERS
+    PACKING COMPLETE. CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/5
+    FLATTENING SELECTED LAYERS
+    FLATTEN COMPLETE. CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/5
+    EXPANDING UNIQUE ICV PLACEMENTS
+    MERGING TOP/MP LAYER CELLS
+    EXPANDING LARGE TOP LAYER CELL PLACEMENTS
+    MERGING CURVILINEAR GEOMETRY
+    CURVILINEAR MERGE COMPLETE CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/5
+    COMPUTING RECTILINEAR EXTENTS
+    RECTILINEAR EXTENTS COMPLETE. CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/5
+    SORTING PLACEMENTS VERTICALLY
+    SORT COMPLETE. CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/5
+    ELIMINATING DUPLICATE PLACEMENTS
+    DUPLICATE PLACEMENT ELIMINATION COMPLETE (12 -> 12 = 0). CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/5
+    PACKING PLACEMENTS
+    PACKING COMPLETE. CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/5
+    PACKING GEOMETRY HEADERS
+    PACKING COMPLETE. CPU TIME = 0  REAL TIME = 0  LVHEAP = 2/5/5
+    EXPANDING UNIQUE TRANSPARENT CELL PLACEMENTS
+      PRE-EXPAND COMPLETE CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/5
+    EXPANDING UNIQUE LIGHT-WEIGHT CELL PLACEMENTS
+      PRE-EXPAND COMPLETE CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/5/5
+        prg_titanium_phase_shifter__3_wg in prg_titanium_phase_shifter__3 at (-10,-4.225)
+        prg_titanium_phase_shifter__3_TRES in prg_titanium_phase_shifter__3 at (-12,-2.725)
+        pcell_5_wg2b in pcell_5 at (0,-1.891)
+        pcell_5_wg1b in pcell_5 at (0,-8.398)
+        pcell_5_wg2a in pcell_5 at (-10.453,-1.891)
+        pcell_5_wg1a in pcell_5 at (-10.453,-8.398)
+        WG_TRACE_5 in pcell_6 at (6.003,-180.16)
+        prg_titanium_phase_shifter__3 in pcell_6 at (-12.453,-116.279)
+    EXPAND COMPLETE. CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+    EXPANDING TRIVIAL CELL PLACEMENTS
+      PRE-EXPAND COMPLETE CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+    EXPANDING VERY SPARSE ARRAY PLACEMENTS
+    EXPANDING LARGE CELL ARRAY PLACEMENTS
+    EXPANDING VERY SPARSE CELL PLACEMENTS
+      PRE-EXPAND COMPLETE CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+    ELIMINATING DUPLICATE SUPER-HIERARCHICAL PLACEMENTS
+    DUPLICATE SUPER-HIERARCHICAL PLACEMENT ELIMINATION COMPLETE. CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+    PROCESSING LAYOUT BLOAT LAYERS (auto-detected)
+    PROCESSING COMPLETE. CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+    PACKING GEOMETRY HEADERS
+    PACKING COMPLETE. CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+    PROCESSING LARGE CELL EXTENT-BLOATING LAYERS
+    PROCESSING COMPLETE. CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+    EXPANDING DENSE OVERLAPS
+      THRESHOLDS = 1000 10000 3246.68106367
+      PRE-EXPAND COMPLETE CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+    EXPANDING UNIQUE META-CELL PLACEMENTS
+      PRE-EXPAND COMPLETE CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+    EXPANDING DENSE OVERLAPS
+    ANALYZING HIERARCHY FOR AUTOMATIC TURBO FLEX
+    ANALYSIS COMPLETE (TA=4708.404324). CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+    IDENTIFYING MULTI-CORE CELLS
+    INJECTING HIERARCHY
+      INJECTION PREP COMPLETE CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+      PRIORITY INJECTION COMPLETE CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+      INJECTION POST COMPLETE (0 0). CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+    INJECTION COMPLETE. CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+    COMPUTING RECTANGULAR EXTENTS
+    RECTANGULAR EXTENTS COMPLETE. CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+    SORTING PLACEMENTS VERTICALLY
+    SORT COMPLETE. CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+    PUSHING VERY SMALL CELL PLACEMENTS
+    PUSHING TOP LAYER CELL PLACEMENTS
+    FLATTENING VERY SMALL CELL PLACEMENTS
+    FLATTENING SMALL TOP LAYER CELL PLACEMENTS
+    COMPUTING CELL-TO-WORLD TRANSFORMS
+    COMPUTE COMPLETE. CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+    SORTING PLACEMENTS BY CELL
+    SORT COMPLETE. CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+    PACKING HIERARCHY. (C=1 CN=1 P1=1 P2=0 P3=0 XF=0) LVHEAP = 3/6/6
+    PACKING COMPLETE. (C=1 CN=1 P=1 XF=0) CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+    COMPUTING PLACEMENT OVERLAPS
+    COMPUTE COMPLETE (OC=2 V1=0 V2=0 SC=0 FC=2). CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+    COMPUTING CELL OVERLAP AREAS
+    COMPUTE COMPLETE. CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+    COMPUTING PLACEMENT / OVERLAP AREA INTERSECTIONS
+    COMPUTE COMPLETE. CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+HIERARCHICAL DATABASE CONSTRUCTOR COMPLETE. CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6
+(C=1 CN=1 P=1 G=8 GH=1 D=0 TXT=0 XF=0 PO=1)
+
+--------------------------------------------------------------------------------
+-----                           VPC REQUIREMENTS                           -----
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+-----               TEXT OBJECTS FOR CONNECTIVITY EXTRACTION               -----
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+-----                TEXT OBJECTS FOR WITH TEXT OPERATIONS                 -----
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+-----               TEXT OBJECTS FOR EXPAND TEXT OPERATIONS                -----
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+-----                  TEXT OBJECTS FOR CAPI OPERATIONS                    -----
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+-----             LAYER READ SUMMARY (SIMPLE LAYER GEOMETRIES)             -----
+--------------------------------------------------------------------------------
+SIMPLE LAYER      GEOMETRIES                                                    
+--------------------------------------------------------------------------------
+
+  101                    1
+  102                    1
+  103                    0
+  104                    0
+  105                    0
+  110                    0
+  201                    6
+  202                    6
+  203                    0
+  204                    0
+  205                    0
+  210                    0
+  301                    2
+  302                    1
+  10002                  0
+  10004                  0
+  10005                  0
+
+--------------------------------------------------------------------------------
+-----            LAYER READ SUMMARY (ORIGINAL LAYER GEOMETRIES)            -----
+--------------------------------------------------------------------------------
+ORIGINAL LAYER       INITIAL GEOMETRIES                 FINAL GEOMETRIES        
+--------------------------------------------------------------------------------
+
+WG_COR                     6 (11)                           6 (11)              
+WG_CLD                     6 (11)                           6 (11)              
+WG_TRE                     0 (0)                            0 (0)               
+WG_HOL                     0 (0)                            0 (0)               
+WG_TXT                     0 (0)                            0 (0)               
+WG_MARK                    0 (0)                            0 (0)               
+RWG_COR                    1 (1)                            1 (1)               
+RWG_CLD                    1 (1)                            1 (1)               
+RWG_TRE                    0 (0)                            0 (0)               
+RWG_HOL                    0 (0)                            0 (0)               
+RWG_TXT                    0 (0)                            0 (0)               
+RWG_MARK                   0 (0)                            0 (0)               
+HEATER                     1 (1)                            1 (1)               
+METAL                      2 (2)                            2 (2)               
+EBG_KEEPOUT                0 (0)                            0 (0)               
+EBG_OVERLAP                0 (0)                            0 (0)               
+BOUNDARY                   0 (0)                            0 (0)               
+
+--------------------------------------------------------------------------------
+-----         LAYER READ SUMMARY (TEXT FOR CONNECTIVITY EXTRACTION)        -----
+--------------------------------------------------------------------------------
+SIMPLE LAYER              TEXTS                                                 
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+-----          LAYER READ SUMMARY (TEXT FOR WITH TEXT OPERATIONS)          -----
+--------------------------------------------------------------------------------
+SIMPLE LAYER              TEXTS                                                 
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+-----         LAYER READ SUMMARY (TEXT FOR EXPAND TEXT OPERATIONS)         -----
+--------------------------------------------------------------------------------
+SIMPLE LAYER              TEXTS                                                 
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+-----            LAYER READ SUMMARY (TEXT FOR CAPI OPERATIONS)             -----
+--------------------------------------------------------------------------------
+SIMPLE LAYER              TEXTS                                                 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+-----               LAYOUT INPUT EXCEPTION SEVERITY SUMMARY                -----
+--------------------------------------------------------------------------------
+EXCEPTION                           SEVERITY  DEFAULT  COUNT        RDB         
+--------------------------------------------------------------------------------
+
+AREF_ANGLED                            0         Y       0         
+AREF_DIAGONAL                          0         Y       0         
+AREF_PLACEMENT                         0         Y       0         
+AREF_UNPLACED                          0         Y       0         
+ARRAY_PITCH_ZERO                       0         Y       0         
+REPETITION_TYPE_8_9_10_11              0         Y       0         
+DUPLICATE_CELL                         2         Y       0         
+EXCLUDE_CELL_NAME                      1         Y       0         
+EXPAND_CELL                            1         Y       0         
+EXTENT_CELL                            1         Y       0         
+INSIDE_CELL                            1         Y       0         
+MISSING_REFERENCE                      2         Y       0         
+RENAME_CELL                            0         Y       0         
+TOP_CELL_CHOSEN                        1         Y       0         
+TOP_CELL_MULTIPLE                      0         Y       0         
+LAYER_DIRECTORY                        2         Y       0         
+DATATYPE_MAP_SOURCE                    1         Y       0         
+DATATYPE_MAP_TARGET                    1         Y       0         
+EMPTY_BASE_LAYER                       1         Y       0         
+EMPTY_LAYER                            1         Y       11        
+LAYER_OVER_BUMP                        1         Y       0         
+LAYER_BUMP_DUPLICATE                   0         Y       0         
+UNUSED_DATA                            1         Y       0         
+MAGNIFICATION_AUTO                     0         Y       0         
+BOX_RECORD                             0         Y       11        
+CIRCLE                                 2         Y       0         
+CIRCLE_RADIUS_ZERO                     1         Y       0         
+CTRAPEZOID_AREA_ZERO                   1         Y       0         
+CTRAPEZOID_DEGENERATE                  2         Y       0         
+TRAPEZOID_AREA_ZERO                    1         Y       0         
+TRAPEZOID_DEGENERATE                   2         Y       0         
+XGEOMETRY_UNSUPPORTED                  2         Y       0         
+NODE_RECORD                            0         Y       11        
+XELEMENT_UNSUPPORTED                   2         Y       0         
+XNAME_UNSUPPORTED                      2         Y       0         
+PATH_ACUTE                             1         Y       0         
+PATH_ANGLED                            1         Y       0         
+PATH_SKEW                              1         Y       0         
+PATH_BIG                               0         Y       0         
+PATH_CIRCULAR                          1         Y       0         
+PATH_COINCIDENT                        1         Y       0         
+PATH_DEGENERATE                        2         Y       0         
+PATH_ENDSEGMENT_SHORT                  1         Y       0         
+PATH_EXTENSION                         2         Y       0         
+PATH_EXTENSION_MULTIPLE                1         Y       0         
+PATH_NEGATIVE                          1         Y       0         
+PATH_NONORIENTABLE                     2         Y       0         
+PATH_NONSIMPLE                         0         Y       0         
+PATH_SPIKE                             2         Y       0         
+PATH_VARIABLE                          1         Y       0         
+PATH_WIDTH_ABSOLUTE                    2         Y       0         
+PATH_WIDTH_MULTIPLE                    1         Y       0         
+PATH_WIDTH_ODD                         0         Y       0         
+PATH_WIDTH_ZERO                        1         Y       0         
+LAYOUT_PATH_LAYER_GDS                  1         Y       0         
+PLACEMENT_ANGLE_ABSOLUTE               2         Y       0         
+PLACEMENT_MAGNIFICATION_ABSOLUTE       2         Y       0         
+PLACEMENT_MAGNIFICATION_NONPOSITIVE    2         Y       0         
+PLACEMENT_MAGNIFIED                    0         Y       0         
+PLACEMENT_MULTIPLE                     0         Y       0         
+LAYOUT_POLYGON                         1         Y       0         
+POLYGON_ACUTE                          0         Y       0         
+POLYGON_AREA_ZERO                      1         Y       0         
+POLYGON_DEGENERATE                     2         Y       0         
+POLYGON_IS_RECTANGLE                   0         Y       0         
+POLYGON_NONORIENTABLE                  2         Y       0         
+POLYGON_NONSIMPLE                      1         N       0         
+POLYGON_NOT_CLOSED                     0         Y       0         
+POLYGON_SPIKE                          0         Y       0         
+RECTANGLE_SIDE_ZERO                    1         Y       0         
+CELLNAME_NSTRING                       2         Y       0         
+PROPNAME_NSTRING                       2         Y       0         
+TEXT_LENGTH                            1         Y       0         
+TEXTSTRING_ASTRING                     2         Y       0         
+LAYOUT_TEXT                            1         Y       0         
+TEXT_BIG                               2         Y       0         
+TEXT_DEGENERATE                        2         Y       0         
+METRIC_INPUT_FILE                      2         Y       0         
+METRIC_RULE_FILE                       1         Y       0         
+PRECISION_LAYOUT                       2         Y       0         
+PRECISION_INPUT_FILE                   2         Y       0         
+PRECISION_RULE_FILE                    2         Y       0         
+
+
+--------------------------------------------------------------------------------
+-----                      CELL AND PLACEMENT SUMMARY                      -----
+--------------------------------------------------------------------------------
+CELL TYPE                 CELLS           PLACEMENTS       FLAT PLACEMENTS      
+--------------------------------------------------------------------------------
+
+USER                          3                    4                     4
+ VERY SMALL                   0                    0                     0
+ TOP LAYER                    0                    0                     0
+  VERY SMALL                  0                    0                     0
+PSEUDO                        0                    0                     0
+TOTAL                         3                    4                     4
+
+--------------------------------------------------------------------------------
+-----                   LAYOUT DATA INPUT MODULE SUMMARY                   -----
+--------------------------------------------------------------------------------
+
+--- TOTAL GEOMETRIES READ FROM SIMPLE LAYERS = 17
+--- TOTAL GEOMETRIES READ FROM ORIGINAL LAYERS = 17 (27)
+--- TOTAL GEOMETRIES WRITTEN TO ORIGINAL LAYERS = 17 (27)
+--- LVHEAP = 3/6/6
+--- DATABASE EXTENT = [ -12.453 , -196.956 ] -> [ 10.453 , 8.398 ]
+--- GEOMETRIC DEPTH = ALL
+--- TEXT DEPTH FOR CONNECTIVITY EXTRACTION = PRIMARY
+--- TOTAL TEXT OBJECTS FOR CONNECTIVITY EXTRACTION = 0 (0)
+--- TOTAL TEXT OBJECTS FOR WITH TEXT OPERATIONS = 0 (0)
+--- TOTAL TEXT OBJECTS FOR EXPAND TEXT OPERATIONS = 0 (0)
+--- TOTAL TEXT OBJECTS FOR CAPI OPERATIONS = 0 (0)
+--- GEOMETRY FLAGGING = ACUTE (NO)  SKEW (YES)  ANGLED (NO)  OFFGRID (YES)
+                        NONSIMPLE POLYGON (YES)  NONSIMPLE PATH (NO)
+--- PRIMARY CELL = pcell_6
+--- EXCLUDED CELLS =
+--- LAYOUT BASE LAYER = (NOT SPECIFIED)
+--- LAYOUT TOP LAYER = (NOT SPECIFIED)
+--- LAYOUT IGNORE LAYER [INVERSE] = (NOT SPECIFIED)
+
+--- CALIBRE LAYOUT DATA INPUT MODULE COMPLETED.  CPU TIME = 0  REAL TIME = 0
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-----        CALIBRE::DRC-H - RESULTS DATABASE INITIALIZATION MODULE       -----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+--- GLOBAL DRC RESULTS DATABASE FILE = _pcell_6_drc.ascii (ASCII)
+--- GLOBAL MAXIMUM RESULTS PER RULECHECK = 1000
+--- GLOBAL MAXIMUM VERTICES PER RESULT POLYGON = 199
+--- CHECK TEXT MAPPING = COMMENTS + RULE FILE INFORMATION
+--- KEEP EMPTY RULE CHECKS = YES
+--- DRC RESULTS MAGNIFICATION = 1
+--- DRC RESULTS DATABASE PRECISION = 1000
+
+--------------------------------------------------------------------------------
+-----              DRC RULECHECK -> RESULTS DATABASE MAPPING               -----
+--------------------------------------------------------------------------------
+                                                          DATA        MAX    MAX
+RULECHECK            RESULTS DATABASE         TYPE LAYER  TYPE     RESULT VERTEX
+--------------------------------------------------------------------------------
+WG.W.150             _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+WG.S.150             _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+WG.SHARPANGLE        _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+WG_COR.I.WG_CLD      _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+WG_HOL.I.WG_COR      _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+WG_HOL.IO.WG_TRE     _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+WG_HOL.IO.WG_CLD     _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+RWG.W.150            _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+RWG.S.150            _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+RWG.SHARPANGLE       _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+RWG_COR.I.RWG_CLD    _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+RWG_HOL.I.RWG_COR    _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+RWG_HOL.IO.RWG_TRE   _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+RWG_HOL.IO.RWG_CLD   _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+HEATER.S.IO.WG       _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+HEATER.E.RWG         _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+HEATER.S.5           _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+METAL.O.HEATER.5     _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+METAL.W.5            _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+METAL.S.5            _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+WG_COR.IO.EBG_KEEPOUT
+                     _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+RWG_COR.IO.EBG_KEEPOUT
+                     _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+DESIGN.IN.BOUNDARY   _pcell_6_drc.ascii      ASCII   N/A   N/A       1000    199
+
+--- CALIBRE::DRC-H RESULTS DATABASE INITIALIZATION MODULE COMPLETED.  CPU TIME = 0  REAL TIME = 0
+
+--- CALIBRE::DRC-H LAYER READ SUMMARY SETUP COMPLETED.  CPU TIME = 0  REAL TIME = 0
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-----                   CALIBRE::DRC-H - EXECUTIVE MODULE                  -----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+WG_CLD = OR WG_CLD
+------------------
+WG_CLD (HIER TYP=1 CFG=0 HGC=3 FGC=5 HEC=402 FEC=800 IGC=4 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 1 OF 76  ELAPSED TIME = 0
+
+Original Layer WG_CLD DELETED -- LVHEAP = 3/6/6
+
+WG_COR = OR WG_COR
+------------------
+WG_COR (HIER TYP=1 CFG=1 HGC=4 FGC=7 HEC=520 FEC=1036 IGC=4 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 2 OF 76  ELAPSED TIME = 0
+
+Original Layer WG_COR DELETED -- LVHEAP = 3/6/6
+
+TMP<2> = WG_CLD NOT WG_COR
+--------------------------
+TMP<2> (HIER TYP=1 CFG=0 HGC=7 FGC=12 HEC=922 FEC=1836 IGC=4 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 3 OF 76  ELAPSED TIME = 0
+
+WG_TRE = OR WG_TRE
+------------------
+WG_TRE (HIER TYP=1 CFG=0 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 4 OF 76  ELAPSED TIME = 0
+
+Original Layer WG_TRE DELETED -- LVHEAP = 3/6/6
+
+WG_HOL = OR WG_HOL
+------------------
+WG_HOL (HIER TYP=1 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 5 OF 76  ELAPSED TIME = 0
+
+Original Layer WG_HOL DELETED -- LVHEAP = 3/6/6
+
+WG_CRIT = OR TMP<2> WG_TRE WG_HOL
+---------------------------------
+WG_CRIT (HIER TYP=1 CFG=1 HGC=7 FGC=12 HEC=922 FEC=1836 IGC=4 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 6 OF 76  ELAPSED TIME = 0
+
+Layer TMP<2> DELETED -- LVHEAP = 3/6/6
+
+WG.W.150::width = EXT WG_CRIT < 0.15 ABUT < 90 SINGULAR
+WG.S.150::spacing = INT WG_CRIT < 0.15 ABUT < 90 SINGULAR
+---------------------------------------------------------
+WG.W.150::width (HIER TYP=3 CFG=1 HGC=6 FGC=12 HEC=12 FEC=24 IGC=0)
+WG.S.150::spacing (HIER TYP=3 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 8 OF 76  ELAPSED TIME = 0
+
+WG.W.150::width_angle = DFM PROPERTY WG.W.150::width
+----------------------------------------------------
+WG.W.150::width_angle (HIER TYP=3 CFG=1 HGC=6 FGC=12 HEC=12 FEC=24 IGC=0)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 9 OF 76  ELAPSED TIME = 0
+
+Layer WG.W.150::width DELETED -- LVHEAP = 3/6/6
+
+WG.W.150::<1> = DFM COPY WG.W.150::width_angle REGION
+-----------------------------------------------------
+WG.W.150::<1> (HIER TYP=1 CFG=1 HGC=2 FGC=4 HEC=22 FEC=44 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 10 OF 76  ELAPSED TIME = 0
+
+Layer WG.W.150::width_angle DELETED -- LVHEAP = 3/6/6
+
+Layer WG.W.150::<1> DELETED -- LVHEAP = 3/6/6
+
+DRC RuleCheck WG.W.150 COMPLETED. Number of Results = 2 (4)
+
+WG.S.150::spacing_angle = DFM PROPERTY WG.S.150::spacing [angle = MIN(ANGLE(WG.S.150::spacing))] < 1.17
+-------------------------------------------------------------------------------------------------------
+WG.S.150::spacing_angle (HIER TYP=3 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VPC=X)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 11 OF 76  ELAPSED TIME = 0
+
+Layer WG.S.150::spacing DELETED -- LVHEAP = 3/6/6
+
+WG.S.150::<1> = DFM COPY WG.S.150::spacing_angle REGION
+-------------------------------------------------------
+WG.S.150::<1> (HIER TYP=1 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 12 OF 76  ELAPSED TIME = 0
+
+Layer WG.S.150::spacing_angle DELETED -- LVHEAP = 3/6/6
+
+Layer WG.S.150::<1> DELETED -- LVHEAP = 3/6/6
+
+DRC RuleCheck WG.S.150 COMPLETED. Number of Results = 0 (0)
+
+WG_TXT = OR WG_TXT
+------------------
+WG_TXT (HIER TYP=1 CFG=0 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 13 OF 76  ELAPSED TIME = 0
+
+Original Layer WG_TXT DELETED -- LVHEAP = 3/6/6
+
+WG_MARK = OR WG_MARK
+--------------------
+WG_MARK (HIER TYP=1 CFG=0 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 14 OF 76  ELAPSED TIME = 0
+
+Original Layer WG_MARK DELETED -- LVHEAP = 3/6/6
+
+WG_ALL = OR WG_CRIT WG_TXT WG_MARK
+----------------------------------
+WG_ALL (HIER TYP=1 CFG=1 HGC=7 FGC=12 HEC=922 FEC=1836 IGC=4 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 15 OF 76  ELAPSED TIME = 0
+
+Layer WG_CRIT DELETED -- LVHEAP = 3/6/6
+
+Layer WG_TXT DELETED -- LVHEAP = 3/6/6
+
+Layer WG_MARK DELETED -- LVHEAP = 3/6/6
+
+WG.SHARPANGLE::X = MERGE WG_ALL
+-------------------------------
+WG.SHARPANGLE::X (HIER-FMF TYP=1 CFG=1 HGC=3 FGC=4 HEC=1540 FEC=1796 IGC=2 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 16 OF 76  ELAPSED TIME = 0
+
+WG.SHARPANGLE::<1> = CONVEX EDGE WG.SHARPANGLE::X ANGLE1 < 85 ANGLE2 < 360
+WG.SHARPANGLE::<2> = CONVEX EDGE WG.SHARPANGLE::X ANGLE1 > 275 ANGLE2 < 360
+---------------------------------------------------------------------------
+WG.SHARPANGLE::<1> (HIER-FMF TYP=2 CFG=0 HGC=0 FGC=0 HEC=0 FEC=0 IGC=2 VHC=F VPC=F)
+WG.SHARPANGLE::<2> (HIER-FMF TYP=2 CFG=0 HGC=8 FGC=8 HEC=8 FEC=8 IGC=2 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 18 OF 76  ELAPSED TIME = 0
+
+Layer WG.SHARPANGLE::X DELETED -- LVHEAP = 3/6/6
+
+Layer WG.SHARPANGLE::<1> DELETED -- LVHEAP = 3/6/6
+
+Layer WG.SHARPANGLE::<2> DELETED -- LVHEAP = 3/6/6
+
+DRC RuleCheck WG.SHARPANGLE COMPLETED. Number of Results = 8 (8)
+
+WG_COR.I.WG_CLD::<1> = WG_COR NOT WG_CLD
+----------------------------------------
+WG_COR.I.WG_CLD::<1> (HIER TYP=1 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 19 OF 76  ELAPSED TIME = 0
+
+Layer WG_COR.I.WG_CLD::<1> DELETED -- LVHEAP = 3/6/6
+
+DRC RuleCheck WG_COR.I.WG_CLD COMPLETED. Number of Results = 0 (0)
+
+WG_HOL.I.WG_COR::<1> = WG_HOL NOT WG_COR
+----------------------------------------
+WG_HOL.I.WG_COR::<1> (HIER TYP=1 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 20 OF 76  ELAPSED TIME = 0
+
+Layer WG_HOL.I.WG_COR::<1> DELETED -- LVHEAP = 3/6/6
+
+DRC RuleCheck WG_HOL.I.WG_COR COMPLETED. Number of Results = 0 (0)
+
+WG_HOL.IO.WG_TRE::<1> = WG_HOL AND WG_TRE
+-----------------------------------------
+WG_HOL.IO.WG_TRE::<1> (HIER TYP=1 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 21 OF 76  ELAPSED TIME = 0
+
+Layer WG_TRE DELETED -- LVHEAP = 3/6/6
+
+Layer WG_HOL.IO.WG_TRE::<1> DELETED -- LVHEAP = 3/6/6
+
+DRC RuleCheck WG_HOL.IO.WG_TRE COMPLETED. Number of Results = 0 (0)
+
+WG_HOL.IO.WG_CLD::X = WG_HOL AND WG_CLD
+---------------------------------------
+WG_HOL.IO.WG_CLD::X (HIER TYP=1 CFG=0 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 22 OF 76  ELAPSED TIME = 0
+
+Layer WG_HOL DELETED -- LVHEAP = 3/6/6
+
+Layer WG_CLD DELETED -- LVHEAP = 3/6/6
+
+WG_HOL.IO.WG_CLD::<1> = WG_HOL.IO.WG_CLD::X NOT WG_COR
+------------------------------------------------------
+WG_HOL.IO.WG_CLD::<1> (HIER TYP=1 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 23 OF 76  ELAPSED TIME = 0
+
+Layer WG_HOL.IO.WG_CLD::X DELETED -- LVHEAP = 3/6/6
+
+Layer WG_HOL.IO.WG_CLD::<1> DELETED -- LVHEAP = 3/6/6
+
+DRC RuleCheck WG_HOL.IO.WG_CLD COMPLETED. Number of Results = 0 (0)
+
+RWG_CLD = OR RWG_CLD
+--------------------
+RWG_CLD (HIER TYP=1 CFG=0 HGC=1 FGC=1 HEC=4 FEC=4 IGC=2 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 24 OF 76  ELAPSED TIME = 0
+
+Original Layer RWG_CLD DELETED -- LVHEAP = 3/6/6
+
+RWG_COR = OR RWG_COR
+--------------------
+RWG_COR (HIER TYP=1 CFG=1 HGC=1 FGC=1 HEC=4 FEC=4 IGC=2 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 25 OF 76  ELAPSED TIME = 0
+
+Original Layer RWG_COR DELETED -- LVHEAP = 3/6/6
+
+TMP<4> = RWG_CLD NOT RWG_COR
+----------------------------
+TMP<4> (HIER TYP=1 CFG=0 HGC=2 FGC=2 HEC=8 FEC=8 IGC=4 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/6/6  OPS COMPLETE = 26 OF 76  ELAPSED TIME = 0
+
+RWG_TRE = OR RWG_TRE
+--------------------
+RWG_TRE (HIER TYP=1 CFG=0 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/6/6  OPS COMPLETE = 27 OF 76  ELAPSED TIME = 0
+
+Original Layer RWG_TRE DELETED -- LVHEAP = 4/6/6
+
+RWG_HOL = OR RWG_HOL
+--------------------
+RWG_HOL (HIER TYP=1 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/6/6  OPS COMPLETE = 28 OF 76  ELAPSED TIME = 0
+
+Original Layer RWG_HOL DELETED -- LVHEAP = 4/6/6
+
+RWG_CRIT = OR TMP<4> RWG_TRE RWG_HOL
+------------------------------------
+RWG_CRIT (HIER TYP=1 CFG=1 HGC=2 FGC=2 HEC=8 FEC=8 IGC=4 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/6/6  OPS COMPLETE = 29 OF 76  ELAPSED TIME = 0
+
+Layer TMP<4> DELETED -- LVHEAP = 4/6/6
+
+RWG.W.150::width = EXT RWG_CRIT < 0.15 ABUT < 90 SINGULAR
+RWG.S.150::spacing = INT RWG_CRIT < 0.15 ABUT < 90 SINGULAR
+-----------------------------------------------------------
+RWG.W.150::width (HIER TYP=3 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0)
+RWG.S.150::spacing (HIER TYP=3 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/6/6  OPS COMPLETE = 31 OF 76  ELAPSED TIME = 0
+
+RWG.W.150::width_angle = DFM PROPERTY RWG.W.150::width
+------------------------------------------------------
+RWG.W.150::width_angle (HIER TYP=3 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/6/6  OPS COMPLETE = 32 OF 76  ELAPSED TIME = 0
+
+Layer RWG.W.150::width DELETED -- LVHEAP = 4/6/6
+
+RWG.W.150::<1> = DFM COPY RWG.W.150::width_angle REGION
+-------------------------------------------------------
+RWG.W.150::<1> (HIER TYP=1 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/6/6  OPS COMPLETE = 33 OF 76  ELAPSED TIME = 0
+
+Layer RWG.W.150::width_angle DELETED -- LVHEAP = 4/6/6
+
+Layer RWG.W.150::<1> DELETED -- LVHEAP = 4/6/6
+
+DRC RuleCheck RWG.W.150 COMPLETED. Number of Results = 0 (0)
+
+RWG.S.150::spacing_angle = DFM PROPERTY RWG.S.150::spacing [angle = MIN(ANGLE(RWG.S.150::spacing))] < 1.17
+----------------------------------------------------------------------------------------------------------
+RWG.S.150::spacing_angle (HIER TYP=3 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VPC=X)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/6/6  OPS COMPLETE = 34 OF 76  ELAPSED TIME = 0
+
+Layer RWG.S.150::spacing DELETED -- LVHEAP = 4/6/6
+
+RWG.S.150::<1> = DFM COPY RWG.S.150::spacing_angle REGION
+---------------------------------------------------------
+RWG.S.150::<1> (HIER TYP=1 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/6/6  OPS COMPLETE = 35 OF 76  ELAPSED TIME = 0
+
+Layer RWG.S.150::spacing_angle DELETED -- LVHEAP = 4/6/6
+
+Layer RWG.S.150::<1> DELETED -- LVHEAP = 4/6/6
+
+DRC RuleCheck RWG.S.150 COMPLETED. Number of Results = 0 (0)
+
+RWG_TXT = OR RWG_TXT
+--------------------
+RWG_TXT (HIER TYP=1 CFG=0 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/6/6  OPS COMPLETE = 36 OF 76  ELAPSED TIME = 0
+
+Original Layer RWG_TXT DELETED -- LVHEAP = 4/6/6
+
+RWG_MARK = OR RWG_MARK
+----------------------
+RWG_MARK (HIER TYP=1 CFG=0 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/6/6  OPS COMPLETE = 37 OF 76  ELAPSED TIME = 0
+
+Original Layer RWG_MARK DELETED -- LVHEAP = 4/6/6
+
+RWG_ALL = OR RWG_CRIT RWG_TXT RWG_MARK
+--------------------------------------
+RWG_ALL (HIER TYP=1 CFG=1 HGC=2 FGC=2 HEC=8 FEC=8 IGC=4 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/6/6  OPS COMPLETE = 38 OF 76  ELAPSED TIME = 0
+
+Layer RWG_CRIT DELETED -- LVHEAP = 4/6/6
+
+Layer RWG_TXT DELETED -- LVHEAP = 4/6/6
+
+Layer RWG_MARK DELETED -- LVHEAP = 4/6/6
+
+RWG.SHARPANGLE::X = MERGE RWG_ALL
+---------------------------------
+RWG.SHARPANGLE::X (HIER-FMF TYP=1 CFG=1 HGC=2 FGC=2 HEC=8 FEC=8 IGC=4 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/6/6  OPS COMPLETE = 39 OF 76  ELAPSED TIME = 0
+
+RWG.SHARPANGLE::<1> = CONVEX EDGE RWG.SHARPANGLE::X ANGLE1 < 85 ANGLE2 < 360
+RWG.SHARPANGLE::<2> = CONVEX EDGE RWG.SHARPANGLE::X ANGLE1 > 275 ANGLE2 < 360
+-----------------------------------------------------------------------------
+RWG.SHARPANGLE::<1> (HIER-FMF TYP=2 CFG=0 HGC=0 FGC=0 HEC=0 FEC=0 IGC=4 VHC=F VPC=F)
+RWG.SHARPANGLE::<2> (HIER-FMF TYP=2 CFG=0 HGC=0 FGC=0 HEC=0 FEC=0 IGC=4 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/6/6  OPS COMPLETE = 41 OF 76  ELAPSED TIME = 0
+
+Layer RWG.SHARPANGLE::X DELETED -- LVHEAP = 4/6/6
+
+Layer RWG.SHARPANGLE::<1> DELETED -- LVHEAP = 4/6/6
+
+Layer RWG.SHARPANGLE::<2> DELETED -- LVHEAP = 4/6/6
+
+DRC RuleCheck RWG.SHARPANGLE COMPLETED. Number of Results = 0 (0)
+
+RWG_COR.I.RWG_CLD::<1> = RWG_COR NOT RWG_CLD
+--------------------------------------------
+RWG_COR.I.RWG_CLD::<1> (HIER TYP=1 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 42 OF 76  ELAPSED TIME = 0
+
+Layer RWG_COR.I.RWG_CLD::<1> DELETED -- LVHEAP = 3/6/6
+
+DRC RuleCheck RWG_COR.I.RWG_CLD COMPLETED. Number of Results = 0 (0)
+
+RWG_HOL.I.RWG_COR::<1> = RWG_HOL NOT RWG_COR
+--------------------------------------------
+RWG_HOL.I.RWG_COR::<1> (HIER TYP=1 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 43 OF 76  ELAPSED TIME = 0
+
+Layer RWG_HOL.I.RWG_COR::<1> DELETED -- LVHEAP = 3/6/6
+
+DRC RuleCheck RWG_HOL.I.RWG_COR COMPLETED. Number of Results = 0 (0)
+
+RWG_HOL.IO.RWG_TRE::<1> = RWG_HOL AND RWG_TRE
+---------------------------------------------
+RWG_HOL.IO.RWG_TRE::<1> (HIER TYP=1 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 44 OF 76  ELAPSED TIME = 0
+
+Layer RWG_TRE DELETED -- LVHEAP = 3/6/6
+
+Layer RWG_HOL.IO.RWG_TRE::<1> DELETED -- LVHEAP = 3/6/6
+
+DRC RuleCheck RWG_HOL.IO.RWG_TRE COMPLETED. Number of Results = 0 (0)
+
+RWG_HOL.IO.RWG_CLD::X = RWG_HOL AND RWG_CLD
+-------------------------------------------
+RWG_HOL.IO.RWG_CLD::X (HIER TYP=1 CFG=0 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 45 OF 76  ELAPSED TIME = 0
+
+Layer RWG_HOL DELETED -- LVHEAP = 3/6/6
+
+Layer RWG_CLD DELETED -- LVHEAP = 3/6/6
+
+RWG_HOL.IO.RWG_CLD::<1> = RWG_HOL.IO.RWG_CLD::X NOT RWG_COR
+-----------------------------------------------------------
+RWG_HOL.IO.RWG_CLD::<1> (HIER TYP=1 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 46 OF 76  ELAPSED TIME = 0
+
+Layer RWG_HOL.IO.RWG_CLD::X DELETED -- LVHEAP = 3/6/6
+
+Layer RWG_HOL.IO.RWG_CLD::<1> DELETED -- LVHEAP = 3/6/6
+
+DRC RuleCheck RWG_HOL.IO.RWG_CLD COMPLETED. Number of Results = 0 (0)
+
+HEATER = OR HEATER
+------------------
+HEATER (HIER TYP=1 CFG=1 HGC=1 FGC=1 HEC=4 FEC=4 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 47 OF 76  ELAPSED TIME = 0
+
+Original Layer HEATER DELETED -- LVHEAP = 3/6/6
+
+HEATER.S.IO.WG::X = SIZE HEATER BY 5
+------------------------------------
+HEATER.S.IO.WG::X (HIER TYP=1 CFG=0 HGC=1 FGC=1 HEC=4 FEC=4 IGC=2 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/6/6  OPS COMPLETE = 48 OF 76  ELAPSED TIME = 0
+
+HEATER.S.IO.WG::<1> = WG_ALL AND HEATER.S.IO.WG::X
+--------------------------------------------------
+HEATER.S.IO.WG::<1> (HIER TYP=1 CFG=1 HGC=4 FGC=4 HEC=16 FEC=16 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/6/6  OPS COMPLETE = 49 OF 76  ELAPSED TIME = 0
+
+Layer HEATER.S.IO.WG::X DELETED -- LVHEAP = 4/6/6
+
+Layer HEATER.S.IO.WG::<1> DELETED -- LVHEAP = 4/6/6
+
+DRC RuleCheck HEATER.S.IO.WG COMPLETED. Number of Results = 4 (4)
+
+HEATER_OUTSIDE_RWG = HEATER NOT RWG_COR
+---------------------------------------
+HEATER_OUTSIDE_RWG (HIER TYP=1 CFG=1 HGC=2 FGC=2 HEC=8 FEC=8 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 50 OF 76  ELAPSED TIME = 0
+
+HEATER.E.RWG::width = INT HEATER_OUTSIDE_RWG < 2.5 ABUT < 90 SINGULAR
+---------------------------------------------------------------------
+HEATER.E.RWG::width (HIER TYP=3 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 51 OF 76  ELAPSED TIME = 0
+
+Layer HEATER_OUTSIDE_RWG DELETED -- LVHEAP = 3/6/6
+
+HEATER.E.RWG::width_angle = DFM PROPERTY HEATER.E.RWG::width [angle = MIN(ANGLE(HEATER.E.RWG::width))] < 1.17
+-------------------------------------------------------------------------------------------------------------
+HEATER.E.RWG::width_angle (HIER TYP=3 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VPC=X)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 52 OF 76  ELAPSED TIME = 0
+
+Layer HEATER.E.RWG::width DELETED -- LVHEAP = 3/6/6
+
+HEATER.E.RWG::<1> = DFM COPY HEATER.E.RWG::width_angle REGION
+-------------------------------------------------------------
+HEATER.E.RWG::<1> (HIER TYP=1 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 53 OF 76  ELAPSED TIME = 0
+
+Layer HEATER.E.RWG::width_angle DELETED -- LVHEAP = 3/6/6
+
+Layer HEATER.E.RWG::<1> DELETED -- LVHEAP = 3/6/6
+
+DRC RuleCheck HEATER.E.RWG COMPLETED. Number of Results = 0 (0)
+
+HEATER.S.5::spacing = EXT HEATER < 5 ABUT < 90 SINGULAR
+-------------------------------------------------------
+HEATER.S.5::spacing (HIER TYP=3 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 54 OF 76  ELAPSED TIME = 0
+
+HEATER.S.5::spacing_angle = DFM PROPERTY HEATER.S.5::spacing [angle = MIN(ANGLE(HEATER.S.5::spacing))] < 1.17
+-------------------------------------------------------------------------------------------------------------
+HEATER.S.5::spacing_angle (HIER TYP=3 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VPC=X)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 55 OF 76  ELAPSED TIME = 0
+
+Layer HEATER.S.5::spacing DELETED -- LVHEAP = 3/6/6
+
+HEATER.S.5::<1> = DFM COPY HEATER.S.5::spacing_angle REGION
+-----------------------------------------------------------
+HEATER.S.5::<1> (HIER TYP=1 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 56 OF 76  ELAPSED TIME = 0
+
+Layer HEATER.S.5::spacing_angle DELETED -- LVHEAP = 3/6/6
+
+Layer HEATER.S.5::<1> DELETED -- LVHEAP = 3/6/6
+
+DRC RuleCheck HEATER.S.5 COMPLETED. Number of Results = 0 (0)
+
+METAL = OR METAL
+----------------
+METAL (HIER TYP=1 CFG=1 HGC=2 FGC=2 HEC=12 FEC=12 IGC=2 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/6/6  OPS COMPLETE = 57 OF 76  ELAPSED TIME = 0
+
+Original Layer METAL DELETED -- LVHEAP = 4/6/6
+
+METAL_HEATER_OVERLAP = METAL AND HEATER
+---------------------------------------
+METAL_HEATER_OVERLAP (HIER TYP=1 CFG=1 HGC=2 FGC=2 HEC=8 FEC=8 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/6/6  OPS COMPLETE = 58 OF 76  ELAPSED TIME = 0
+
+Layer HEATER DELETED -- LVHEAP = 4/6/6
+
+METAL.O.HEATER.5::width = INT METAL_HEATER_OVERLAP < 5 ABUT < 90 SINGULAR
+-------------------------------------------------------------------------
+METAL.O.HEATER.5::width (HIER TYP=3 CFG=1 HGC=4 FGC=4 HEC=8 FEC=8 IGC=0)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/6/6  OPS COMPLETE = 59 OF 76  ELAPSED TIME = 0
+
+Layer METAL_HEATER_OVERLAP DELETED -- LVHEAP = 4/6/6
+
+METAL.O.HEATER.5::width_angle = DFM PROPERTY METAL.O.HEATER.5::width [angle = MIN(ANGLE(METAL.O.HEATER.5::width))] < 1.17
+-------------------------------------------------------------------------------------------------------------------------
+METAL.O.HEATER.5::width_angle (HIER TYP=3 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VPC=X)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 60 OF 76  ELAPSED TIME = 0
+
+Layer METAL.O.HEATER.5::width DELETED -- LVHEAP = 3/6/6
+
+METAL.O.HEATER.5::<1> = DFM COPY METAL.O.HEATER.5::width_angle REGION
+---------------------------------------------------------------------
+METAL.O.HEATER.5::<1> (HIER TYP=1 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 61 OF 76  ELAPSED TIME = 0
+
+Layer METAL.O.HEATER.5::width_angle DELETED -- LVHEAP = 3/6/6
+
+Layer METAL.O.HEATER.5::<1> DELETED -- LVHEAP = 3/6/6
+
+DRC RuleCheck METAL.O.HEATER.5 COMPLETED. Number of Results = 0 (0)
+
+METAL.S.5::spacing = EXT METAL < 5 ABUT < 90 SINGULAR
+METAL.W.5::width = INT METAL < 5 ABUT < 90 SINGULAR
+-----------------------------------------------------
+METAL.S.5::spacing (HIER TYP=3 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0)
+METAL.W.5::width (HIER TYP=3 CFG=1 HGC=4 FGC=4 HEC=8 FEC=8 IGC=0)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 63 OF 76  ELAPSED TIME = 0
+
+Layer METAL DELETED -- LVHEAP = 3/6/6
+
+METAL.W.5::width_angle = DFM PROPERTY METAL.W.5::width [angle = MIN(ANGLE(METAL.W.5::width))] < 1.17
+----------------------------------------------------------------------------------------------------
+METAL.W.5::width_angle (HIER TYP=3 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VPC=X)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 64 OF 76  ELAPSED TIME = 0
+
+Layer METAL.W.5::width DELETED -- LVHEAP = 3/6/6
+
+METAL.W.5::<1> = DFM COPY METAL.W.5::width_angle REGION
+-------------------------------------------------------
+METAL.W.5::<1> (HIER TYP=1 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 65 OF 76  ELAPSED TIME = 0
+
+Layer METAL.W.5::width_angle DELETED -- LVHEAP = 3/6/6
+
+Layer METAL.W.5::<1> DELETED -- LVHEAP = 3/6/6
+
+DRC RuleCheck METAL.W.5 COMPLETED. Number of Results = 0 (0)
+
+METAL.S.5::spacing_angle = DFM PROPERTY METAL.S.5::spacing [angle = MIN(ANGLE(METAL.S.5::spacing))] < 1.17
+----------------------------------------------------------------------------------------------------------
+METAL.S.5::spacing_angle (HIER TYP=3 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VPC=X)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 66 OF 76  ELAPSED TIME = 0
+
+Layer METAL.S.5::spacing DELETED -- LVHEAP = 3/6/6
+
+METAL.S.5::<1> = DFM COPY METAL.S.5::spacing_angle REGION
+---------------------------------------------------------
+METAL.S.5::<1> (HIER TYP=1 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 67 OF 76  ELAPSED TIME = 0
+
+Layer METAL.S.5::spacing_angle DELETED -- LVHEAP = 3/6/6
+
+Layer METAL.S.5::<1> DELETED -- LVHEAP = 3/6/6
+
+DRC RuleCheck METAL.S.5 COMPLETED. Number of Results = 0 (0)
+
+EBG_KEEPOUT = OR EBG_KEEPOUT
+----------------------------
+EBG_KEEPOUT (HIER TYP=1 CFG=0 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 68 OF 76  ELAPSED TIME = 0
+
+Original Layer EBG_KEEPOUT DELETED -- LVHEAP = 3/6/6
+
+WG_COR.IO.EBG_KEEPOUT::X = WG_COR AND EBG_KEEPOUT
+-------------------------------------------------
+WG_COR.IO.EBG_KEEPOUT::X (HIER TYP=1 CFG=0 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 69 OF 76  ELAPSED TIME = 0
+
+Layer WG_COR DELETED -- LVHEAP = 3/6/6
+
+EBG_OVERLAP = OR EBG_OVERLAP
+----------------------------
+EBG_OVERLAP (HIER TYP=1 CFG=0 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 70 OF 76  ELAPSED TIME = 0
+
+Original Layer EBG_OVERLAP DELETED -- LVHEAP = 3/6/6
+
+WG_COR.IO.EBG_KEEPOUT::<1> = WG_COR.IO.EBG_KEEPOUT::X NOT EBG_OVERLAP
+---------------------------------------------------------------------
+WG_COR.IO.EBG_KEEPOUT::<1> (HIER TYP=1 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 71 OF 76  ELAPSED TIME = 0
+
+Layer WG_COR.IO.EBG_KEEPOUT::X DELETED -- LVHEAP = 3/6/6
+
+Layer WG_COR.IO.EBG_KEEPOUT::<1> DELETED -- LVHEAP = 3/6/6
+
+DRC RuleCheck WG_COR.IO.EBG_KEEPOUT COMPLETED. Number of Results = 0 (0)
+
+RWG_COR.IO.EBG_KEEPOUT::X = RWG_COR AND EBG_KEEPOUT
+---------------------------------------------------
+RWG_COR.IO.EBG_KEEPOUT::X (HIER TYP=1 CFG=0 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 72 OF 76  ELAPSED TIME = 0
+
+Layer RWG_COR DELETED -- LVHEAP = 3/6/6
+
+Layer EBG_KEEPOUT DELETED -- LVHEAP = 3/6/6
+
+RWG_COR.IO.EBG_KEEPOUT::<1> = RWG_COR.IO.EBG_KEEPOUT::X NOT EBG_OVERLAP
+-----------------------------------------------------------------------
+RWG_COR.IO.EBG_KEEPOUT::<1> (HIER TYP=1 CFG=1 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 73 OF 76  ELAPSED TIME = 0
+
+Layer RWG_COR.IO.EBG_KEEPOUT::X DELETED -- LVHEAP = 3/6/6
+
+Layer EBG_OVERLAP DELETED -- LVHEAP = 3/6/6
+
+Layer RWG_COR.IO.EBG_KEEPOUT::<1> DELETED -- LVHEAP = 3/6/6
+
+DRC RuleCheck RWG_COR.IO.EBG_KEEPOUT COMPLETED. Number of Results = 0 (0)
+
+DESIGN_ALL = WG_ALL OR RWG_ALL
+------------------------------
+DESIGN_ALL (HIER TYP=1 CFG=0 HGC=9 FGC=14 HEC=930 FEC=1844 IGC=4 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 3/6/6  OPS COMPLETE = 74 OF 76  ELAPSED TIME = 0
+
+Layer WG_ALL DELETED -- LVHEAP = 3/6/6
+
+Layer RWG_ALL DELETED -- LVHEAP = 3/6/6
+
+BOUNDARY = OR BOUNDARY
+----------------------
+BOUNDARY (HIER TYP=1 CFG=0 HGC=0 FGC=0 HEC=0 FEC=0 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/6/6  OPS COMPLETE = 75 OF 76  ELAPSED TIME = 0
+
+Original Layer BOUNDARY DELETED -- LVHEAP = 4/6/6
+
+DESIGN.IN.BOUNDARY::<1> = DESIGN_ALL NOT BOUNDARY
+-------------------------------------------------
+DESIGN.IN.BOUNDARY::<1> (HIER TYP=1 CFG=1 HGC=9 FGC=14 HEC=930 FEC=1844 IGC=0 VHC=F VPC=F)
+CPU TIME = 0  REAL TIME = 0  LVHEAP = 4/6/6  OPS COMPLETE = 76 OF 76  ELAPSED TIME = 0
+
+Layer DESIGN_ALL DELETED -- LVHEAP = 4/6/6
+
+Layer BOUNDARY DELETED -- LVHEAP = 4/6/6
+
+Layer DESIGN.IN.BOUNDARY::<1> DELETED -- LVHEAP = 4/6/6
+
+WARNING: 3 polygon result(s) segmented in DRC RuleCheck DESIGN.IN.BOUNDARY.
+
+
+WRITE to ASCII DRC Results Database _pcell_6_drc.ascii COMPLETED
+
+DRC RuleCheck DESIGN.IN.BOUNDARY COMPLETED. Number of Results = 14 (24)
+
+Cumulative ONE-LAYER BOOLEAN Time: CPU = 0  REAL = 0
+Cumulative TWO-LAYER BOOLEAN Time: CPU = 0  REAL = 0
+Cumulative SIZE Time: CPU = 0  REAL = 0
+Cumulative EDGE MEASUREMENT Time: CPU = 0  REAL = 0
+Cumulative ONE-LAYER DRC Time: CPU = 0  REAL = 0
+Cumulative DFM COPY Time: CPU = 0  REAL = 0
+Cumulative DFM PROPERTY Time: CPU = 0  REAL = 0
+Cumulative MISCELLANEOUS Time: CPU = 0  REAL = 0
+Cumulative RDB Time: CPU = 0  REAL = 0
+
+--- CALIBRE::DRC-H EXECUTIVE MODULE COMPLETED.  CPU TIME = 0  REAL TIME = 0
+--- TOTAL RULECHECKS EXECUTED = 23
+--- TOTAL RESULTS GENERATED = 28 (40)
+--- TOTAL NAR RDB RESULTS GENERATED = 0
+--- TOTAL DENSITY RDB RESULTS GENERATED = 0
+--- DRC RESULTS DATABASE FILE = _pcell_6_drc.ascii (ASCII)
+
+--- CALIBRE::DRC-H COMPLETED - Wed Feb 11 01:09:04 2026
+--- TOTAL CPU TIME = 0  REAL TIME = 0
+--- PROCESSOR COUNT = 4
+--- SUMMARY REPORT FILE = _pcell_6_drc.sum
+

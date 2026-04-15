@@ -1,0 +1,185 @@
+
+
+==================================================================================
+=== CALIBRE::DRC-H SUMMARY REPORT
+===
+Execution Date/Time:       Wed Feb 11 01:09:04 2026
+Calibre Version:           v2025.2_38.18    Mon Jun 2 16:41:43 PDT 2025
+Rule File Pathname:        _pcell_6_for_calibre.cal
+Rule File Title:           PRG ebeam 2-Layer 1-Heater Silicon Photonics DRC deck
+Layout System:             GDS
+Layout Path(s):            _pcell_6_for_calibre.gds
+Layout Primary Cell:       pcell_6
+Current Directory:         /home/user/calibre_data/calibre_job_1235
+User Name:                 user
+Maximum Results/RuleCheck: 1000
+Maximum Result Vertices:   199
+DRC Results Database:      _pcell_6_drc.ascii (ASCII)
+Layout Depth:              ALL
+Text Depth:                PRIMARY
+Summary Report File:       _pcell_6_drc.sum (REPLACE)
+Geometry Flagging:         ACUTE = NO  SKEW = YES  ANGLED = NO  OFFGRID = YES
+                           NONSIMPLE POLYGON = YES  NONSIMPLE PATH = NO
+Excluded Cells:           
+CheckText Mapping:         COMMENT TEXT + RULE FILE INFORMATION
+Layers:                    MEMORY-BASED
+Keep Empty Checks:         YES
+----------------------------------------------------------------------------------
+--- RUNTIME WARNINGS
+---
+SKEW edge on layer WG_COR from location (-8.003,-6.137) to location (-8.002,-5.895) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-8.002,-5.895) to location (-8,-5.669) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-8,-5.669) to location (-7.997,-5.461) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.997,-5.461) to location (-7.991,-5.269) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.991,-5.269) to location (-7.983,-5.092) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.983,-5.092) to location (-7.971,-4.931) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.971,-4.931) to location (-7.958,-4.799) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.958,-4.799) to location (-7.941,-4.667) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.941,-4.667) to location (-7.92,-4.535) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.92,-4.535) to location (-7.895,-4.404) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.895,-4.404) to location (-7.867,-4.274) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.867,-4.274) to location (-7.835,-4.144) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.835,-4.144) to location (-7.8,-4.015) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.8,-4.015) to location (-7.761,-3.888) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.761,-3.888) to location (-7.718,-3.762) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.718,-3.762) to location (-7.672,-3.636) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.672,-3.636) to location (-7.623,-3.513) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.623,-3.513) to location (-7.57,-3.39) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.57,-3.39) to location (-7.513,-3.269) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.513,-3.269) to location (-7.454,-3.15) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.454,-3.15) to location (-7.391,-3.033) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.391,-3.033) to location (-7.324,-2.917) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.324,-2.917) to location (-7.255,-2.803) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.255,-2.803) to location (-7.182,-2.691) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.182,-2.691) to location (-7.107,-2.582) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.107,-2.582) to location (-7.028,-2.474) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.028,-2.474) to location (-6.946,-2.369) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-6.946,-2.369) to location (-6.861,-2.266) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-6.861,-2.266) to location (-6.774,-2.165) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-6.774,-2.165) to location (-6.684,-2.067) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-6.684,-2.067) to location (-6.591,-1.971) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-6.591,-1.971) to location (-6.495,-1.878) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-6.495,-1.878) to location (-6.397,-1.788) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-6.397,-1.788) to location (-6.296,-1.701) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-6.296,-1.701) to location (-6.193,-1.616) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-6.193,-1.616) to location (-6.088,-1.534) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-6.088,-1.534) to location (-5.98,-1.455) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-5.98,-1.455) to location (-5.871,-1.38) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-5.871,-1.38) to location (-5.759,-1.307) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-5.759,-1.307) to location (-5.645,-1.238) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-5.645,-1.238) to location (-5.529,-1.171) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-5.529,-1.171) to location (-5.412,-1.108) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-5.412,-1.108) to location (-5.293,-1.049) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-5.293,-1.049) to location (-5.172,-0.992) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-5.172,-0.992) to location (-5.049,-0.939) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-5.049,-0.939) to location (-4.926,-0.89) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-4.926,-0.89) to location (-4.8,-0.844) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-4.8,-0.844) to location (-4.674,-0.801) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-4.674,-0.801) to location (-4.547,-0.762) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-4.547,-0.762) to location (-4.418,-0.727) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-4.418,-0.727) to location (-4.288,-0.695) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-4.288,-0.695) to location (-4.158,-0.667) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-4.158,-0.667) to location (-4.027,-0.642) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-4.027,-0.642) to location (-3.895,-0.621) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-3.895,-0.621) to location (-3.763,-0.604) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-3.763,-0.604) to location (-3.631,-0.591) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-3.631,-0.591) to location (-3.47,-0.579) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-3.47,-0.579) to location (-3.293,-0.571) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-3.293,-0.571) to location (-3.101,-0.565) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-3.101,-0.565) to location (-2.893,-0.562) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-2.893,-0.562) to location (-2.667,-0.56) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-2.667,-0.56) to location (-2.425,-0.559) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-2.426,-0.109) to location (-2.67,-0.11) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-2.67,-0.11) to location (-2.898,-0.112) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-2.898,-0.112) to location (-3.112,-0.115) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-3.112,-0.115) to location (-3.311,-0.121) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-3.311,-0.121) to location (-3.497,-0.13) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-3.497,-0.13) to location (-3.67,-0.143) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-3.67,-0.143) to location (-3.815,-0.157) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-3.815,-0.157) to location (-3.96,-0.176) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-3.96,-0.176) to location (-4.104,-0.199) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-4.104,-0.199) to location (-4.247,-0.226) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-4.247,-0.226) to location (-4.39,-0.257) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-4.39,-0.257) to location (-4.531,-0.291) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-4.531,-0.291) to location (-4.672,-0.33) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-4.672,-0.33) to location (-4.812,-0.373) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-4.812,-0.373) to location (-4.95,-0.419) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-4.95,-0.419) to location (-5.087,-0.47) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-5.087,-0.47) to location (-5.222,-0.524) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-5.222,-0.524) to location (-5.356,-0.582) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-5.356,-0.582) to location (-5.488,-0.643) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-5.488,-0.643) to location (-5.619,-0.709) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-5.619,-0.709) to location (-5.747,-0.778) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-5.747,-0.778) to location (-5.874,-0.85) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-5.874,-0.85) to location (-5.999,-0.926) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-5.999,-0.926) to location (-6.121,-1.006) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-6.121,-1.006) to location (-6.241,-1.089) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-6.241,-1.089) to location (-6.359,-1.175) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-6.359,-1.175) to location (-6.474,-1.264) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-6.474,-1.264) to location (-6.587,-1.357) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-6.587,-1.357) to location (-6.697,-1.453) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-6.697,-1.453) to location (-6.804,-1.551) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-6.804,-1.551) to location (-6.909,-1.653) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-6.909,-1.653) to location (-7.011,-1.758) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.011,-1.758) to location (-7.109,-1.865) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.109,-1.865) to location (-7.205,-1.975) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.205,-1.975) to location (-7.298,-2.088) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.298,-2.088) to location (-7.387,-2.203) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.387,-2.203) to location (-7.473,-2.321) in cell pcell_5_wg1a.
+SKEW edge on layer WG_COR from location (-7.473,-2.321) to location (-7.556,-2.441) in cell pcell_5_wg1a.
+Maximum SKEW edge warning count of 100 has been reached.
+3 polygon result(s) segmented in DRC RuleCheck DESIGN.IN.BOUNDARY.
+----------------------------------------------------------------------------------
+--- ORIGINAL LAYER STATISTICS
+---
+LAYER WG_COR ........ TOTAL Original Geometry Count = 6 (11)
+LAYER WG_CLD ........ TOTAL Original Geometry Count = 6 (11)
+LAYER WG_TRE ........ TOTAL Original Geometry Count = 0 (0)
+LAYER WG_HOL ........ TOTAL Original Geometry Count = 0 (0)
+LAYER WG_TXT ........ TOTAL Original Geometry Count = 0 (0)
+LAYER WG_MARK ....... TOTAL Original Geometry Count = 0 (0)
+LAYER RWG_COR ....... TOTAL Original Geometry Count = 1 (1)
+LAYER RWG_CLD ....... TOTAL Original Geometry Count = 1 (1)
+LAYER RWG_TRE ....... TOTAL Original Geometry Count = 0 (0)
+LAYER RWG_HOL ....... TOTAL Original Geometry Count = 0 (0)
+LAYER RWG_TXT ....... TOTAL Original Geometry Count = 0 (0)
+LAYER RWG_MARK ...... TOTAL Original Geometry Count = 0 (0)
+LAYER HEATER ........ TOTAL Original Geometry Count = 1 (1)
+LAYER METAL ......... TOTAL Original Geometry Count = 2 (2)
+LAYER EBG_KEEPOUT ... TOTAL Original Geometry Count = 0 (0)
+LAYER EBG_OVERLAP ... TOTAL Original Geometry Count = 0 (0)
+LAYER BOUNDARY ...... TOTAL Original Geometry Count = 0 (0)
+----------------------------------------------------------------------------------
+--- RULECHECK RESULTS STATISTICS
+---
+RULECHECK WG.W.150 ................. TOTAL Result Count = 2  (4)
+RULECHECK WG.S.150 ................. TOTAL Result Count = 0  (0)
+RULECHECK WG.SHARPANGLE ............ TOTAL Result Count = 8  (8)
+RULECHECK WG_COR.I.WG_CLD .......... TOTAL Result Count = 0  (0)
+RULECHECK WG_HOL.I.WG_COR .......... TOTAL Result Count = 0  (0)
+RULECHECK WG_HOL.IO.WG_TRE ......... TOTAL Result Count = 0  (0)
+RULECHECK WG_HOL.IO.WG_CLD ......... TOTAL Result Count = 0  (0)
+RULECHECK RWG.W.150 ................ TOTAL Result Count = 0  (0)
+RULECHECK RWG.S.150 ................ TOTAL Result Count = 0  (0)
+RULECHECK RWG.SHARPANGLE ........... TOTAL Result Count = 0  (0)
+RULECHECK RWG_COR.I.RWG_CLD ........ TOTAL Result Count = 0  (0)
+RULECHECK RWG_HOL.I.RWG_COR ........ TOTAL Result Count = 0  (0)
+RULECHECK RWG_HOL.IO.RWG_TRE ....... TOTAL Result Count = 0  (0)
+RULECHECK RWG_HOL.IO.RWG_CLD ....... TOTAL Result Count = 0  (0)
+RULECHECK HEATER.S.IO.WG ........... TOTAL Result Count = 4  (4)
+RULECHECK HEATER.E.RWG ............. TOTAL Result Count = 0  (0)
+RULECHECK HEATER.S.5 ............... TOTAL Result Count = 0  (0)
+RULECHECK METAL.O.HEATER.5 ......... TOTAL Result Count = 0  (0)
+RULECHECK METAL.W.5 ................ TOTAL Result Count = 0  (0)
+RULECHECK METAL.S.5 ................ TOTAL Result Count = 0  (0)
+RULECHECK WG_COR.IO.EBG_KEEPOUT .... TOTAL Result Count = 0  (0)
+RULECHECK RWG_COR.IO.EBG_KEEPOUT ... TOTAL Result Count = 0  (0)
+RULECHECK DESIGN.IN.BOUNDARY ....... TOTAL Result Count = 14 (24)
+----------------------------------------------------------------------------------
+--- SUMMARY
+---
+TOTAL CPU Time:                  0
+TOTAL REAL Time:                 0
+TOTAL Original Layer Geometries: 17 (27)
+TOTAL DRC RuleChecks Executed:   23
+TOTAL DRC Results Generated:     28 (40)

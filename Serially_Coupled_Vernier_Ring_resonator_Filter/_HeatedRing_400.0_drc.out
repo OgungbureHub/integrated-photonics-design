@@ -1,0 +1,272 @@
+//  Calibre v2025.2_38.18    Mon Jun 2 16:41:43 PDT 2025
+//  Calibre Utility Library   v0-10_13-2017-1    Wed Dec 11 07:38:03 PST 2024
+//  Litho Libraries v2025.2_38.18  Mon Jun 2 16:41:43 PDT 2025
+//
+//                   Copyright Siemens 1996-2025
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+WARNING: tuned profile "balanced" on host "wsmaredsous.intec.ugent.be" may not be ideal for best performance. Refer to Calibre Admin Guide.
+//  Running on Linux wsmaredsous.intec.ugent.be (157.193.135.116) 5.14.0-611.5.1.el9_7.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Nov 11 08:09:09 EST 2025 x86_64 glibc 2.34/NPTL 2.34
+//  OS: AlmaLinux release 9.7 (Moss Jungle Cat)[5.14.0-611.5.1.el9_7.x86_64]
+//  hypervisor detected
+//
+//  Entries in /proc/meminfo:
+//
+//  MemTotal:       16088700 kB
+//  MemFree:        14199304 kB
+//  MemAvailable:   14485996 kB
+//  Buffers:            4320 kB
+//  Cached:           543580 kB
+//  SwapCached:            0 kB
+//  Active:          1341704 kB
+//  Inactive:         235636 kB
+//  Active(anon):    1070600 kB
+//  Inactive(anon):        0 kB
+//  Active(file):     271104 kB
+//  Inactive(file):   235636 kB
+//  Unevictable:        4000 kB
+//  Mlocked:               0 kB
+//  SwapTotal:       8241148 kB
+//  SwapFree:        8241148 kB
+//  Zswap:                 0 kB
+//  Zswapped:              0 kB
+//  Dirty:                32 kB
+//  Writeback:             0 kB
+//  AnonPages:       1033440 kB
+//  Mapped:           144936 kB
+//  Shmem:             41160 kB
+//  KReclaimable:      74352 kB
+//  Slab:             137780 kB
+//  SReclaimable:      74352 kB
+//  SUnreclaim:        63428 kB
+//  KernelStack:        3932 kB
+//  PageTables:         9116 kB
+//  SecPageTables:         0 kB
+//  NFS_Unstable:          0 kB
+//  Bounce:                0 kB
+//  WritebackTmp:          0 kB
+//  CommitLimit:    16285496 kB
+//  Committed_AS:    1560092 kB
+//  VmallocTotal:   34359738367 kB
+//  VmallocUsed:       20244 kB
+//  VmallocChunk:          0 kB
+//  Percpu:             1760 kB
+//  HardwareCorrupted:     0 kB
+//  AnonHugePages:    270336 kB
+//  ShmemHugePages:        0 kB
+//  ShmemPmdMapped:        0 kB
+//  FileHugePages:         0 kB
+//  FilePmdMapped:         0 kB
+//  CmaTotal:              0 kB
+//  CmaFree:               0 kB
+//  Unaccepted:            0 kB
+//  HugePages_Total:       0
+//  HugePages_Free:        0
+//  HugePages_Rsvd:        0
+//  HugePages_Surp:        0
+//  Hugepagesize:       2048 kB
+//  Hugetlb:               0 kB
+//  DirectMap4k:      152584 kB
+//  DirectMap2M:     6117376 kB
+//  DirectMap1G:    12582912 kB
+//
+//  User limits:
+//
+//  Data size: unlimited
+//  RSS: unlimited
+//  Stack size: 8192 kB
+//  Max user processes: 62589
+//  VM: unlimited
+//  Current active profile: balanced
+//  net.netfilter.nf_conntrack_max: 262144
+//  vm.max_map_count: 65530
+//  vm.overcommit_memory: 0
+//  kernel.pid_max: 4194304
+//
+WARNING: Please increase descriptors limit for best performance (1024)
+//
+//  Processor AMD EPYC 7313 16-Core Processor                 [2511] (4th generation)
+//  CPU Info: Cores = 4, affinity = (4/4/4)
+//  Max file descriptors: 1024
+//  64 bit virtual addressing enabled
+//  Running aok_cal_2025.2_38.18/pkgs/icv/pvt/calibre -drc -hier -turbo _HeatedRing_400.0_for_calibre.cal
+//  Process ID: 253098
+//
+//  Starting time: Wed Feb 11 00:59:49 2026
+//
+
+--- CALIBRE_* ENVIRONMENT VARIABLES:
+
+CALIBRE_ATOMIC_LVHEAP=0
+CALIBRE_CMD_LINE='/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv/pvt/calibre  -drc -hier -turbo _HeatedRing_400.0_for_calibre.cal'
+CALIBRE_HOME=/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18
+CALIBRE_INITIAL_CMD_LINE='/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/bin/calibre -drc -hier -turbo _HeatedRing_400.0_for_calibre.cal'
+CALIBRE_READDB_LD_LIBRARY_PATH=/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv/julia/1.5/lib/julia:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv/julia/1.5/lib:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/shared/pkgs/icv/tools/calibre_client/lib/64:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/calibre_base/lib64:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv_lib/lib64:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv_qt5_comp/plugins:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv_oa/22.41p004/lib/linux_rhel68_gcc44x_64/opt
+CALIBRE_SKIP_OS_CHECKS=
+//  Calibre Controller logfile = /var/tmp/CalibreControllerLog.wsmaredsous.intec.ugent.be.253098.2026_0211_0059
+//  Calibre Controller Connection wsmaredsous.intec.ugent.be:34149
+//  Running on 4 CPUs (pending licensing) 
+//
+//  LITHO operations available for use on 4 CPUs (pending licensing)
+//
+//  Created Core System logfile = /var/tmp/CalibreRRLog.wsmaredsous.intec.ugent.be.253098.2026_0211_0059
+
+--- CALIBRE::DRC-H - Wed Feb 11 00:59:49 2026
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-----          STANDARD VERIFICATION RULE FILE COMPILATION MODULE          -----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+--- RULE FILE = _HeatedRing_400.0_for_calibre.cal
+
+LAYOUT PATH             "_HeatedRing_400.0_for_calibre.gds"
+    LAYOUT PRIMARY          "HeatedRing_400.0"
+    LAYOUT SYSTEM           GDSII
+    DRC SUMMARY REPORT      "_HeatedRing_400.0_drc.sum"
+    DRC RESULTS DATABASE    "_HeatedRing_400.0_drc.ascii" 
+    
+    //DRC KEEP EMPTY          NO
+    
+    // BEGIN: PRE INCLUDE COMMANDS
+    
+    // END: PRE INCLUDE COMMANDS
+    
+    INCLUDE "./prg_ebeam_2L_1MH_drc_deck.cal" 
+    
+    // BEGIN: POST INCLUDE COMMANDS
+    
+    // END: POST INCLUDE COMMANDS
+    
+    
+
+
+--- STANDARD VERIFICATION RULE FILE COMPILATION MODULE COMPLETED.  CPU TIME = 0  REAL TIME = 0  LVHEAP = 1/3/3
+
+--- CALIBRE_* ENVIRONMENT VARIABLES:
+
+CALIBRE_ATOMIC_LVHEAP=0
+CALIBRE_CMD_LINE='/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv/pvt/calibre  -drc -hier -turbo _HeatedRing_400.0_for_calibre.cal'
+CALIBRE_HOME=/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18
+CALIBRE_INITIAL_CMD_LINE='/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/bin/calibre -drc -hier -turbo _HeatedRing_400.0_for_calibre.cal'
+CALIBRE_READDB_LD_LIBRARY_PATH=/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv/julia/1.5/lib/julia:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv/julia/1.5/lib:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/shared/pkgs/icv/tools/calibre_client/lib/64:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/calibre_base/lib64:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv_lib/lib64:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv_qt5_comp/plugins:/home/user/calibre_2025_2_install_dir/aok_cal_2025.2_38.18/pkgs/icv_oa/22.41p004/lib/linux_rhel68_gcc44x_64/opt
+CALIBRE_SKIP_OS_CHECKS=
+
+
+--- VARIABLES:
+
+--- DEFINES:
+
+--- SELECTED RULE CHECKS:
+    WG.W.150
+    WG.S.150
+    WG.SHARPANGLE
+    WG_COR.I.WG_CLD
+    WG_HOL.I.WG_COR
+    WG_HOL.IO.WG_TRE
+    WG_HOL.IO.WG_CLD
+    RWG.W.150
+    RWG.S.150
+    RWG.SHARPANGLE
+    RWG_COR.I.RWG_CLD
+    RWG_HOL.I.RWG_COR
+    RWG_HOL.IO.RWG_TRE
+    RWG_HOL.IO.RWG_CLD
+    HEATER.S.IO.WG
+    HEATER.E.RWG
+    HEATER.S.5
+    METAL.O.HEATER.5
+    METAL.W.5
+    METAL.S.5
+    WG_COR.IO.EBG_KEEPOUT
+    RWG_COR.IO.EBG_KEEPOUT
+    DESIGN.IN.BOUNDARY
+
+--- UNSELECTED RULE CHECKS (IMPLICIT):
+
+--- UNSELECTED RULE CHECKS (EXPLICIT):
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-----                  CALIBRE::DRC-H - LICENSING MODULE                   -----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+
+//  Applying licensing policy...
+//  calibrehdrc license acquired.
+//  calibredrc license acquired.
+//  calibrehdrc license acquired.
+//  calibredrc license acquired.
+
+//  Licensed Products
+//  -----------------
+//  Base products running on 4 cores:
+//  - DRC (Hierarchical)
+//  - DFM PROPERTY
+//  - DFM COPY
+
+--- CALIBRE::DRC-H LICENSING MODULE COMPLETED.  CPU TIME = 0  REAL TIME = 0
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-----                   CALIBRE LAYOUT DATA INPUT MODULE                   -----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+--- LAYOUT SYSTEM = GDS
+--- LAYOUT MAGNIFICATION = 1
+
+--------------------------------------------------------------------------------
+-----                     GDS FILE SUMMARY INFORMATION                     -----
+--------------------------------------------------------------------------------
+
+GDS FILENAME:        _HeatedRing_400.0_for_calibre.gds
+GDS VERSION:         5
+LIBRARY NAME:        HeatedRing_400.0
+LAST MODIFIED:       ON 2026/2/10 AT 23:19:3
+LAST ACCESSED:       ON 2026/2/10 AT 23:19:3
+DATABASE PRECISION:  0.001 user units per database unit
+PHYSICAL PRECISION:  1e-09 meters per database unit
+MAGNIFICATION:       1
+SIZE:                12122
+
+--------------------------------------------------------------------------------
+-----                 GDS INPUT DATA FOR INDIVIDUAL CELLS                  -----
+--------------------------------------------------------------------------------
+     CELL NAME                  PLACEMENTS   ARRAYS   POLYGONS    PATHS    TEXTS
+--------------------------------------------------------------------------------
+HeatedRing_400_0                         6        0          0        0        0
+AUTOTP_30                                2        0          2        0        0
+AUTOTP_30_TRANSITION1                    0        0          4        0        0
+AUTOTP_30_TRANSITION2                    0        0          4        0        0
+WG_TRACE_58                              0        0          2        0        0
+WG_TRACE_59                              0        0          2        0        0
+pcell_49                                 4        0          0        0        0
+pcell_49_wg1a                            0        0          2        0        0
+pcell_49_wg1b                            0        0          2        0        0
+pcell_49_wg2a                            0        0          2        0        0
+pcell_49_wg2b                            0        0          2        0        0
+prg_titanium_phase_shifter__33           2        0          0        0        0
+prg_titanium_phase_shifter__33_TRES
+                                         0        0          3        0        0
+
+--------------------------------------------------------------------------------
+-----                LAYOUT DATABASE CONSTRUCTOR CONCLUSION                -----
+--------------------------------------------------------------------------------
+
+DATABASE PREP:                      CPU TIME = 0  REAL TIME = 0
+DATABASE READ:                      CPU TIME = 0  REAL TIME = 0
+TEXT UPDATE:                        CPU TIME = 0  REAL TIME = 0
+
+ERROR: Specified primary cell HeatedRing_400.0 is not located within the input layout database.
+
