@@ -44,9 +44,5 @@ It showcases my practical experience in Photonic Integrated Circuit (PIC) design
 ## Note
 This portfolio is a **work in progress**. I will continue updating it with new simulation results, measurement data, fitting plots, and additional projects as my Master’s dissertation and lab work progress.
 
----
 
-**Semilogo Olusola Ogungbure**  
-Advanced Master’s Candidate in Silicon Photonics  
-Ghent University, Belgium  
 
