@@ -50,6 +50,3 @@ This portfolio is a **work in progress**. I will continue updating it with new s
 Advanced Master’s Candidate in Silicon Photonics  
 Ghent University, Belgium  
 
-semilogoolusolaogungbure@gmail.com  
-+32 484 823 661  
-[LinkedIn](https://www.linkedin.com/in/ogungbure-o-ba86b2206/)
